@@ -15,6 +15,9 @@ if "JSONCPP" in env :
     env["CPPPATH"] += ["%s/include" % env["JSONCPP"]]
     env["LIBPATH"] += ["%s/lib" % env["JSONCPP"]]
 
+env["SHCXXCOMSTR"] = "Compiling $SOURCE"
+env["SHLINKCOMSTR"] = "Linking $TARGET"
+
 if "PREFIX" in env :
     env["CPPPATH"] += ["%s/include" % env["PREFIX"]]
 
